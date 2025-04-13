@@ -1,0 +1,32 @@
+import { FaVolumeUp } from 'react-icons/fa';
+import { FaVolumeMute } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
+import ControlButton from './ControlButton';
+import clickSound from '../assets/click.wav';
+
+function VolumeButton() {
+    const [active, setActive] = useState();
+
+    useEffect(() => {
+        const playAudio = (e) => {
+            new Audio(clickSound).play();
+        };
+
+        if (active) {
+            window.addEventListener('click', playAudio);
+        }
+
+        return () => {
+            window.removeEventListener('click', playAudio);
+        };
+    }, [active]);
+
+    return (
+        <ControlButton onClick={() => setActive((prev) => !prev)}>
+            {active && <FaVolumeUp className="h-6 w-6" />}
+            {!active && <FaVolumeMute className="h-6 w-6" />}
+        </ControlButton>
+    );
+}
+
+export default VolumeButton;
