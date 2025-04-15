@@ -9,7 +9,9 @@ function VolumeButton() {
 
     useEffect(() => {
         const playAudio = (e) => {
-            new Audio(clickSound).play();
+            const click = new Audio(clickSound);
+            click.volume = 0.07;
+            click.play();
         };
 
         if (active) {

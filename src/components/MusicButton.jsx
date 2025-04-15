@@ -7,6 +7,7 @@ import bgMusic from '../assets/background_music.mp3';
 function MusicButton() {
     const [active, setActive] = useState();
     const audio = new Audio(bgMusic);
+    audio.volume = 0.07;
     audio.loop = true;
 
     useEffect(() => {
@@ -17,7 +18,7 @@ function MusicButton() {
         return () => {
             audio.pause();
         };
-    }, [active, audio]);
+    }, [active]);
 
     return (
         <ControlButton onClick={() => setActive((prev) => !prev)}>
