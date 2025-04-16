@@ -11,4 +11,5 @@
 
 @theme {
     --font-display: 'Potta-One', serif;
+    --shadow-lg: 0 5px 10px #000, 0 -5px 10px #000;
 }
