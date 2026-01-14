@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 import DifficultyButton from './DifficultyButton';
 
 function StartDialog({ switchNext, setDifficulty }) {

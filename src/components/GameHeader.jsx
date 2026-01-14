@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { handleEnter } from '../utils/keyboard';
 import ScoreBoard from './ScoreBoard';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 
 function GameHeader({ switchNext, score, bestScore }) {
     return (

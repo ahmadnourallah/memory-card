@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
-import lostBg from '../assets/losing_background.jpg';
-import wonBg from '../assets/winning_background.avif';
+import lostBg from '../assets/losing_background.webp';
+import wonBg from '../assets/winning_background.webp';
 
 function Modal({ hasWon, onClick }) {
     return (

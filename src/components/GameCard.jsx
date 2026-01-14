@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useRef, useState } from 'react';
 import { handleEnter } from '../utils/keyboard';
-import cardBackground from '../assets/card_background.jpg';
+import cardBackground from '../assets/card_background.webp';
 
 function GameCard({ character, characterId, isOpen, onClick }) {
     const isFirstRender = useRef(true);

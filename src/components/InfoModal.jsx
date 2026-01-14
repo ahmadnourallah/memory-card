@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import InfoBox from './InfoBox';
-import mabelInfo from '../assets/mabel_info.png';
+import mabelInfo from '../assets/mabel_info.webp';
 
 function InfoModal({ active }) {
     return (

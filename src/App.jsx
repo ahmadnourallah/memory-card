@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import BackgroundVideo from './components/BackgroundVideo';
+import Background from './components/Background';
 import Footer from './components/Footer';
-import InfoBox from './components/InfoBox';
 import Switcher from './components/Switcher';
 import StartDialog from './components/StartDialog';
 import GameContainer from './components/GameContainer';
@@ -23,7 +22,7 @@ function App() {
                 </main>
                 <Footer />
             </div>
-            <BackgroundVideo />
+            <Background />
         </>
     );
 }

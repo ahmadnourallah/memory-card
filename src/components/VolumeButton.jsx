@@ -2,13 +2,13 @@ import { FaVolumeUp } from 'react-icons/fa';
 import { FaVolumeMute } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import ControlButton from './ControlButton';
-import clickSound from '../assets/click.wav';
+import clickSound from '../assets/click.mp3';
 
 function VolumeButton() {
     const [active, setActive] = useState();
 
     useEffect(() => {
-        const playAudio = (e) => {
+        const playAudio = () => {
             const click = new Audio(clickSound);
             click.volume = 0.07;
             click.play();

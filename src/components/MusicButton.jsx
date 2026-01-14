@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy } from 'react';
+import { useState, useEffect } from 'react';
 import { MdMusicOff } from 'react-icons/md';
 import { MdMusicNote } from 'react-icons/md';
 import ControlButton from './ControlButton';
