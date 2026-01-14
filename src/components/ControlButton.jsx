@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 function ControlButton({ onClick, children }) {
-    const [active, setActive] = useState(false);
-
     return (
         <button
             onClick={onClick}
