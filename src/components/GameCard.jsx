@@ -1,11 +1,10 @@
 import { motion } from 'motion/react';
-import { useQueryClient, useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { useEffect, useRef, useState } from 'react';
 import { handleEnter } from '../utils/keyboard';
 import cardBackground from '../assets/card_background.jpg';
 
 function GameCard({ character, characterId, isOpen, onClick }) {
-    const queryClient = useQueryClient();
     const isFirstRender = useRef(true);
     const [rotate, setRotate] = useState({ x: 0, y: 0 });
     const [characterImage, setCharacterImage] = useState(null);
